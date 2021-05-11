@@ -43,6 +43,7 @@ function Admin(){
                 }
     return (
         <div>
+            <input type="text" value="2015-10-21" disabled/><br />
             <button onClick={consultmissing}>Consult A</button> 
             <button onClick={consultsymptom}>Consult B</button>
                 <button onClick={consultextend}>Consult C</button> 

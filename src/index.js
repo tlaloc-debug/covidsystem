@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Welder from "./welder.js";
 import Admin from "./admin.js";
 import Axios from "axios";
+import How from "./howtouse.js";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
 
     return (
         <div>
+            <div><How /></div>
             <button onClick={reset}>Reset</button>
             <div style={{width: "100%", border: "solid green"}}><Welder /></div>
             <div style={{width: "100%", border: "solid blue"}}><Admin /></div>
