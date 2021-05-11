@@ -39,14 +39,14 @@ function Admin(){
                         Axios.get("https://backcovid.herokuapp.com/resconsultc").then((response2)=>{
                                    setresultextend(response2.data)
                                 })
-                    
+                   
                 }
     return (
         <div>
-            <input type="text" value="2015-10-21" disabled/><br />
+            <input type="text" value="2015-10-21" disabled/><br /><br />
             <button onClick={consultmissing}>Consult A</button> 
             <button onClick={consultsymptom}>Consult B</button>
-                <button onClick={consultextend}>Consult C</button> 
+            <button onClick={consultextend}>Consult C</button> 
 
             {resultmissing.map((welder)=>{answer.push(welder.name)})}
                     {welders.map((welder)=>{
@@ -66,6 +66,7 @@ function Admin(){
                    <div style={{width: "100%", display: "flex", justifyContent: "center", marginTop: "30px"}}>
                     <div style={{width: "90%", border: "solid 1px"}}>
                         <div style={{width: "100%", textAlign: "center", fontSize: "1.5em", fontWeight: "bold"}}>file.txt</div>
+                        <br />
                     
                     {resultextend.map((welder)=>{
                         return(

@@ -17,8 +17,9 @@ function App() {
         <div>
             <div><How /></div>
             <button onClick={reset}>Reset</button>
-            <div style={{width: "100%", border: "solid green"}}><Welder /></div>
-            <div style={{width: "100%", border: "solid blue"}}><Admin /></div>
+            <div style={{width: "95%", border: "solid green", padding: "20px"}}><Welder /></div>
+            <div style={{width: "95%", border: "solid blue", padding: "20px"}}><Admin /></div>
+            <div style={{width: "100%", height: "300px"}}></div>
         </div>
     )
 }

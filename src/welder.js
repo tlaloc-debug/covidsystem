@@ -25,16 +25,16 @@ function Welder() {
 
     return (
         <Router>
-            <div>
+            <div >
                 <div>Hi Erick, do you have any symptoms today?</div>
-            
+                <br />
                 <button onClick={Any}> I dont have any</button>                 
-                <Link to="/sales"><button>I have some</button></Link>   
-                <button onClick={Update}>Send</button>                    
+                <Link to="/symptoms"><button>I have some</button></Link>   
+                <button onClick={Update}>Send</button>                  
        
     <Switch>
       <Route path="/" exact component={House} />
-      <Route path="/sales" component={Sales} />
+      <Route path="/symptoms" component={Symptoms} />
     </Switch>
    
             </div>
@@ -46,7 +46,7 @@ const House = () => (
     <div></div>
     );
 
-const Sales = () => (
+const Symptoms = () => (
     <Form />   
 );
 
