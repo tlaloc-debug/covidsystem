@@ -8,11 +8,19 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 function Welder() {
 
     const Any = () => {
-        Axios.get("https://backcovid.herokuapp.com/negative")
+        Axios.get("https://backcovid.herokuapp.com/negative").then((response)=>{
+            if (response.statusText==="OK") {
+                alert("data sent");
+            }
+        })
     }
 
     const Update = () => {
-        Axios.get("https://backcovid.herokuapp.com/positive")
+        Axios.get("https://backcovid.herokuapp.com/positive").then((response)=>{
+            if (response.statusText==="OK") {
+                alert("data sent");
+            }
+        })
     }
 
     return (
